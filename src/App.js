@@ -49,7 +49,7 @@ function App(props) {
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
       >
-        <Todo name="Eat" className="todo stack-small">
+        <Todo name="Eat" completed={true} className="todo stack-small">
           <div className="c-cb">
             <input id="todo-0" type="checkbox" defaultChecked={true} />
             <label className="todo-label" htmlFor="todo-0">
@@ -65,7 +65,7 @@ function App(props) {
             </button>
           </div>
         </Todo>
-        <Todo name="Sleep" className="todo stack-small">
+        <Todo name="Sleep" completed={false} className="todo stack-small">
           <div className="c-cb">
             <input id="todo-1" type="checkbox" />
             <label className="todo-label" htmlFor="todo-1">
@@ -81,7 +81,7 @@ function App(props) {
             </button>
           </div>
         </Todo>
-        <Todo name="Repeat" className="todo stack-small">
+        <Todo name="Repeat" completed={false} className="todo stack-small">
           <div className="c-cb">
             <input id="todo-2" type="checkbox" />
             <label className="todo-label" htmlFor="todo-2">
