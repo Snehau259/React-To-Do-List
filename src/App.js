@@ -1,6 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 
+import Todo from "./components/Todo";
+
 function App(props) {
   return (
     <div className="todoapp stack-large">
@@ -47,7 +49,7 @@ function App(props) {
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
       >
-        <li className="todo stack-small">
+        <Todo name="Eat" className="todo stack-small">
           <div className="c-cb">
             <input id="todo-0" type="checkbox" defaultChecked={true} />
             <label className="todo-label" htmlFor="todo-0">
@@ -62,8 +64,8 @@ function App(props) {
               Delete <span className="visually-hidden">Eat</span>
             </button>
           </div>
-        </li>
-        <li className="todo stack-small">
+        </Todo>
+        <Todo name="Sleep" className="todo stack-small">
           <div className="c-cb">
             <input id="todo-1" type="checkbox" />
             <label className="todo-label" htmlFor="todo-1">
@@ -78,8 +80,8 @@ function App(props) {
               Delete <span className="visually-hidden">Sleep</span>
             </button>
           </div>
-        </li>
-        <li className="todo stack-small">
+        </Todo>
+        <Todo name="Repeat" className="todo stack-small">
           <div className="c-cb">
             <input id="todo-2" type="checkbox" />
             <label className="todo-label" htmlFor="todo-2">
@@ -94,7 +96,7 @@ function App(props) {
               Delete <span className="visually-hidden">Repeat</span>
             </button>
           </div>
-        </li>
+        </Todo>
       </ul>
     </div>
   );
